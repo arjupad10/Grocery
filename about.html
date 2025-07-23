@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple</title>
+    <title>About 67</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <style>
+    
+        @keyframes colorchange{
+            0%{top:0vh; background:orangered;}
+            10%{top:50vh; background:orchid;}
+            20%{top:50vh; background:greenyellow;}
+            30%{top:50vh; background:yellow;}
+            40%{top:50vh; background:crimson;}
+            60%{top:50vh; background:blue;}
+            80%{top:50vh; background:orange;}
+            100%{top:100vh; background:deepskyblue;}
+        }
+
+
+       
+        .image-group {
+            display: flex; /* Make this a flex container to arrange images side-by-side */
+            justify-content: center; /* Center the images within this group */
+            align-items: center; /* Align images vertically if they have different heights */
+            margin-bottom: 20px;
+        }
+
+        .image-group img {
+            transition:transform 0.3s ease;
+            border-radius:20px; /* Still scales them down */
+            /* Remove display:flex; and justify-content:center; from here */
+            /* Adjust margins between images if needed */
+            margin: 50px; /* Adds 10px space to the left and right of each image */
+            max-width: 300px; /* Example: Limit individual image width for better control */
+            height: auto; /* Maintain aspect ratio */
+        }
         body{
-            background-color: blanchedalmond;
-            
+            animation: colorchange 300ms infinite;
+
+        }
+        .image-group img:hover{
+            transform:scale(1.5)
         }
         h1{
             margin-bottom:15px;
@@ -20,29 +52,29 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color:saddlebrown;
         }
-        p{
-            margin:10px;
-            font-size:30px;
-            width:700px;
-            text-align: center;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-        }
-        a{
-            color:burlywood
-        }
-        .product{
-
+        
+        .about{
             display:flex;
-            justify-content:flex-start;
             flex-direction: column;
             align-items:center;
             padding:15px;
         }
+        
         img{
+            
+            display:flex;
+            justify-content:center;
             border-radius:20px;
-            width:600px;
-        }
 
+        }
+        p{
+            margin:10px;
+            font-size:30px;
+            line-height:1.5;
+            width:900px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        }
     </style>
 </head>
 <body>
@@ -84,11 +116,19 @@
           </div>
         </div>
       </nav>
-    <h1><u><b>6 7 Croissants</b></u></h1>
-    <div class="product">
-        <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-viral-flat-croissant.jpg">
-        <p> A croissant is a crescent-shaped, buttery pastry made from layered dough, known for its flaky, crisp exterior and soft, airy interior. It's a classic viennoiserie item, often enjoyed for breakfast or as a snack. The distinctive flavor comes from the high butter content and the lamination process, which creates multiple layers of dough and fat. </p>
-        <a class="btn btn-dark" href="https://croissant.com/" role="">Buy Croissant</a>
+    <h1><u>About 67 Organics</u></h1>
+    <div class="about">
+        
+        <div class="image-group">
+            <img src="https://i.kym-cdn.com/entries/icons/original/000/053/895/67-kid.jpg" alt="Placeholder Image 1">
+
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3B3a3drODhzcXN5aHB4YnFtb3M0Yng4eXJkaDFsaXhsejZudnI2YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TpvnqBFOE0tVrnGU1h/source.gif" class="main-gif" alt="Shang-Chi GIF">
+
+            <img src="https://i1.sndcdn.com/artworks-fH57pJX8My0ZFmRk-u6cbCw-t1080x1080.jpg" alt="Placeholder Image 2">
+        </div>
+        <p> Step into 67 Organics, the grocery store where the internet's favorite number takes center stage! Every single item on our shelves, from fresh-picked produce to pantry staples and gourmet treats, is 100% organic and priced at a flat $67. We've embraced the viral "6 7" meme, transforming it into a unique shopping experience where quality and simplicity reign. Forget deciphering complex pricing or ingredient lists; here, you're guaranteed top-tier organic products and a playfully 
+            consistent price point, making your grocery run as straightforward as it is delightfully eccentric.</p>
     </div>
-    
 </body>
+
+</html>

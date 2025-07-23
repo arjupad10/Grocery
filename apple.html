@@ -6,7 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <style>
+        body{
+            background-color: blanchedalmond;
+            
+        }
+        h1{
+            margin-bottom:15px;
+            text-align:center;
+            font-size:80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:saddlebrown;
+        }
+        p{
+            margin:10px;
+            font-size:30px;
+            width:700px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        }
+        a{
+            color:burlywood
+        }
+        .product{
+
+            display:flex;
+            justify-content:flex-start;
+            flex-direction: column;
+            align-items:center;
+            padding:15px;
+        }
+        img{
+            border-radius:20px;
+            width:600px;
+        }
+
     </style>
 </head>
-<body></body>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">6-7</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/index.html?#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.67water.com/">6-7 Hydration</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recipes.
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="appleRecipes.html">Apple Recipes </a></li>
+                  <li><a class="dropdown-item" href="strawberryRecipes.html">Strawberry Recipes</a></li>
+                  <li><a class="dropdown-item" href="sodaRecipes.html">Soda Recipes</a></li>
+                  <li><a class="dropdown-item" href="milkRecipes.html">Milk Recipes</a></li>
+                  <li><p>More coming soon...</p></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <h1><u><b>6 7 Apples</b></u></h1>
+    <div class="product">
+        <img src="https://ichef.bbci.co.uk/images/ic/480xn/p07v2wjn.jpg.webp">
+        <p>Apples are a popular, round, and edible fruit that grow on apple trees. They are cultivated worldwide and are known for their diverse flavors, colors, and textures. Apples are a good source of fiber, vitamin C, and various antioxidants, and are enjoyed both raw and cooked. </p>
+        <a class="btn btn-dark" href="https://apple.com/" role="">Buy Apples</a>
+        
+    </div>
+    
+</body>
